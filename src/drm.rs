@@ -95,7 +95,7 @@ impl Card {
     }
 
     fn open_default() -> Result<Self, io::Error> {
-        Self::open("/dev/dri/card0")
+        Self::open("/dev/dri/card1")
     }
 
     fn drm_window(&self) -> Result<Option<DrmWindow>, io::Error> {
