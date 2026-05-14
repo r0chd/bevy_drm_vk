@@ -7,7 +7,7 @@ edition = "2024"
 [dependencies]
 # bevy = { version = "0.18", features = ["bevy_log", "bevy_window"] }
 bevy = { git = "https://github.com/bevyengine/bevy.git", rev = "543b305", features = ["bevy_log", "bevy_window"] }
-drm = "0.14.2"
+drm = "0.15.0"
 raw-window-handle = "0.6.2"
 
 [patch.crates-io]

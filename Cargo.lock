@@ -661,7 +661,7 @@ name = "bevy_drm_vk"
 version = "0.1.0"
 dependencies = [
  "bevy",
- "drm",
+ "drm 0.15.0",
  "raw-window-handle",
 ]
 
@@ -2210,6 +2210,21 @@ name = "drm"
 version = "0.14.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c5b71449a23fe79542d6527ca572844b2016abf9573c49e43144d546b1735aec"
+dependencies = [
+ "bitflags 2.11.0",
+ "bytemuck",
+ "bytemuck_derive",
+ "drm-ffi",
+ "drm-fourcc",
+ "libc",
+ "rustix 1.1.4",
+]
+
+[[package]]
+name = "drm"
+version = "0.15.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7a41816e58f47f49acfd956651055ddcf137c4882c2098c30c448817af21183a"
 dependencies = [
  "bitflags 2.11.0",
  "bytemuck",
@@ -5157,7 +5172,7 @@ dependencies = [
  "cfg-if",
  "cfg_aliases",
  "core-graphics-types 0.2.0",
- "drm",
+ "drm 0.14.2",
  "glow",
  "glutin_wgl_sys",
  "gpu-allocator",
